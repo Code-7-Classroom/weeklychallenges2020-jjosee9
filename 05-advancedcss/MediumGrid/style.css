@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px;
+    
+}
+
+.grid-container > div {
+    background-color: #d1f5d3;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    border: solid #7d5e2a;
+  }
+
+  img {
+      border-radius: 10px;
+  }
+  h1 {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      color:#231903;
+  }
+  
