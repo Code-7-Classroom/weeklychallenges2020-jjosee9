@@ -12,11 +12,23 @@ function getMonthName() {
 
     // 1
     var monthNumberString = prompt('Enter a month number');
+    var monthNumberInt = parseInt(monthNumberString);
 
-    switch (monthNumberString) {
-        case "1":
+    // 2
+    if (monthNumberInt < 1 || monthNumberInt > 12) {
+        alert('invalid number')
+        return
+    } else if (isNaN(monthNumberInt)) {
+        alert('Not a Number')
+        return
     }
 
+    //3 link number to month
+    var monthNumberIntCorrected = monthNumberInt - 1
+    var monthNameArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var monthNameString = monthNameArray[monthNumberIntCorrected]
+
+    console.log(monthNameString);
     return
 }
 

@@ -7,12 +7,35 @@
 //Create a Boolean variable containing information about whether Tom has a higher BMI than Jerry.
 // Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
 
-var Tom = {
-    mass: 3.62874
-    height: 0.2286
-    calc.BMI: function() {
-        this.bmi = this.mass / (this.height *
-            this.height);
-        return this.bmi;
+
+var tom = {
+    name: 'tom',
+    mass: 8,
+    height: 9,
+    calcBMI: function()  {
+      this.bmi  = this.mass / (this.height * this.height);
+      return this.bmi
+      }
+  }
+  var jerry = {
+  name: 'jerry',
+  mass: .1,
+  height: 3.94,
+  calcBMI: function()  {
+    this.bmi  = this.mass / (this.height * this.height);
+    return this.bmi
     }
-}
+  }
+  
+  tom.calcBMI();
+  jerry.calcBMI();
+  console.log(tom, jerry);
+  
+  if(tom.bmi < jerry.bmi){
+    var tombmi = true
+    console.log("Tom's BMI is bigger than Jerry's "+ tombmi);
+  }
+  else{
+    var tombmi = false
+    console.log("Jerry's BMI is bigger than Tom's "+ tombmi);
+  }  
