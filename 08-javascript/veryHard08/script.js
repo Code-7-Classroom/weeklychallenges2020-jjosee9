@@ -4,10 +4,10 @@
 
 // 4. Create a Programmer constructor that inherits all the members from Person with 
 //an additional 'languages' property that is passed in and a busy property that is NOT
- //passed in and is set to true by default.
+//passed in and is set to true by default.
 //5. Give the Programmer a 'completeTask' method that updates the busy property on that
- //programmer to be false. Also give the Programmer an 'acceptNewTask' method that updates 
- //the busy property on that programmer to be true.
+//programmer to be false. Also give the Programmer an 'acceptNewTask' method that updates 
+//the busy property on that programmer to be true.
 
 
 var Person = function (name, job, age, ) {
@@ -17,24 +17,35 @@ var Person = function (name, job, age, ) {
     this.exercise = 'running';
 
 
-    this.activity = function() {
+    this.activity = function () {
         console.log(this.exercise + ' is fun - said no one ever');
     }
 
-   this.profession = function() {
+    this.profession = function () {
         console.log(this.name + ' is a ' + this.job);
-     }
+    }
 }
 
-Person.prototype.
 
-var john = new Person ()//running);
+
+var john = new Person()//running);
 john.activity();
 
 var profession = new Person()
 john.profession();
 
+function Programmer(name, job, age, languages) {
+    Person.call(this, name, job, age);
+    this.languages = languages;
+    this.busy = true;
+};
 
+Programmer.prototype.completeTask =
+    function () {
+        this.busy = false;
+    };
 
-
-
+Programmer.prototype.completeTask =
+    function () {
+        this.busy = false;
+    };
