@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom Manipulation Hard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            background-color:blue;
+            outline:none;
+            transition: 0.3s;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        
+        html{
+            background-color: black;
+        }
+       
+    </style>
+</head>
+
+<body>
+ 
+    <button id="bg-red" onclick ="changeColor('bg-red')">Turn it red! </button>
+
+    <button id="bg-white" onclick ="changeColor('bg-white')"> Turn it white! </button>
+     
+    <script>
+ 
+       
+function changeColor(className){
+    var body = document.querySelector('html');
+    
+    while(body.classList.length > 0){
+        console.log('removing class ' + body.classList.item(0))
+      body.classList.remove(body.classList.item(0));
+    }
+    body.classList.add(className);
+  }
+
+
+    </script>
+   
+
+</body>
+
+</html>
