@@ -1,0 +1,15 @@
+{
+    "employee": [
+        {"id": 1, "name": "Stephanie", "salary": 4000, "department": "G"},
+        {"id": 1, "name": "John", "salary": 5000, "department": "G"},
+        {"id": 1, "name": "Saul", "salary": 2500, "department": "G"},
+        {"id": 1, "name": "David", "salary": 6000, "department": "G"},
+        {"id": 1, "name": "Joseph", "salary": 4000, "department": "G"},
+        {"id": 1, "name": "Esau", "salary": 4000, "department": "G"},
+        {"id": 1, "name": "Isaac", "salary": 3500, "department": "G"},
+        {"id": 1, "name": "Diana", "salary": 2000, "department": "G"},
+        {"id": 1, "name": "Laura", "salary": 4000, "department": "G"},
+        {"id": 1, "name": "Leo", "salary": 8000, "department": "G"}
+        
+    ]
+}
