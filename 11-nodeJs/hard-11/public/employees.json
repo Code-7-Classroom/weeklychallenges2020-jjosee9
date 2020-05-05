@@ -1,5 +1,5 @@
 {
-    "employee": [
+    "employees": [
         {"id": 1, "name": "Stephanie", "salary": 4000, "department": "G"},
         {"id": 1, "name": "John", "salary": 5000, "department": "G"},
         {"id": 1, "name": "Saul", "salary": 2500, "department": "G"},

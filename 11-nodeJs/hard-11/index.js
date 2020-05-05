@@ -13,7 +13,7 @@
 
 let express = require ('express');
 let app = express();
-let data = require('../hard/employees.json')
+let data = require('./public/employees.json')
 
 
 app.get('/employees', (req,res) => {
@@ -35,7 +35,6 @@ app.get('/employees/:id', function (req,res){
 
 
 const port = process.env.PORT || 4000;
-
-app.listen(port, () => {
-    console.log(`Listening on port ${port}...`)
-});
+app.listen(port, () => console.log(`listening on port ${port}...`))//{
+//     console.log(`Listening on port ${port}...`)
+// });
