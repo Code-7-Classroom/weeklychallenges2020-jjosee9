@@ -2,42 +2,24 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { Component } from 'react'
+import Person from './Person/Person'
+
+//EASY: Create a ‘constructor’ that takes in
+//  ‘props’ , call the ‘super()’ method, and 
+//  set ‘this.state’ to an empty object inside 
+//  of the ‘App’ class. Inside of ‘this.state’ 
+//  create a ‘person’ property and set it to an 
+//   object
+
 
 class App extends Component {
-  render(){
-    return (
-      <div>
-        <h1>Jose Hernandez</h1>
-        <p>9804283678</p>
-        <p>11/09/1994</p>
-      </div>
-    )
-  }
-}
-
-
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
+  constructor(props){
+    super(props);
+      this.state = {
+        person: {}
+      };
+  } 
+ 
+ 
+  
 export default App;
