@@ -1,6 +1,6 @@
 -- MEDIUM
-DROP DATABASE IF EXISTS movieList;
-CREATE DATABASE movieList;
+DROP DATABASE IF EXISTS moviesList;
+CREATE DATABASE moviesList;
 DROP TABLE IF EXISTS movies;
 
 USE moviesList;
